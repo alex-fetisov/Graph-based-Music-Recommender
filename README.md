@@ -27,8 +27,13 @@ Sort the resulting Data Frame in descending order by the column norm_count, take
 
 The part of the result on the sample dataset:
 
-
-----
+...
+798331 827364
+798335 840741
+798374 816874
+798375 810685
+798379 812055
+...
 
 For all subtasks use the same ipython notebook, each subtask should be the continuation of the previous
 
