@@ -23,9 +23,17 @@ Fields: type, Name, Artist, Id
     Id - id of the item
 
 <h4>Task</h4>
-Build the edges of the type “track-track”. To do it you will need to count the collaborative similarity between all the tracks: if a user has started listening to the tracks A and B together in the limited time interval (equal to 7 minutes), then you should add 1 to the weight of the edge from vertex A to vertex B (initial weight is equal to 0). For each track choose top 40 tracks ordered by weight similar to it and normalize weights of its edges (divide the weight of each edge on a summary of weights of all edges).
+Build the edges of the type “track-track”. To do it you will need to 
 
-Sort the resulting Data Frame in descending order by the column norm_count, take top 40 rows, select only the columns “id1”, “id2”, sort them in ascending order this time first by “id1”, then by “id2” and print the columns “id1”, “id2” of the resulting dataFrame.
+1) count the collaborative similarity between all the tracks: if a user has started listening to the tracks A and B together in the limited time interval (equal to 7 minutes), then you should add 1 to the weight of the edge from vertex A to vertex B (initial weight is equal to 0). 
+
+2) For each track choose top 40 tracks ordered by weight similar to it and normalize weights of its edges (divide the weight of each edge on a summary of weights of all edges).
+
+3) Sort the resulting Data Frame in descending order by the column norm_count, 
+
+4) take top 40 rows, 
+
+5) select only the columns “id1”, “id2”, sort them in ascending order this time first by “id1”, then by “id2” and print the columns “id1”, “id2” of the resulting dataFrame.
 
 The part of the result on the sample dataset:
 
